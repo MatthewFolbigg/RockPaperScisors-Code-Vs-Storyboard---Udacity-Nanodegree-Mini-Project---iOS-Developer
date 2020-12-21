@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F6E66202590F27E0077301C /* statsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6E661F2590F27E0077301C /* statsViewController.swift */; };
+		1F6E66232590F4B20077301C /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6E66222590F4B20077301C /* Match.swift */; };
+		1F6E66262590FB280077301C /* MatchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6E66252590FB280077301C /* MatchCell.swift */; };
 		1FBF68872580ED33006EE8FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBF68862580ED33006EE8FC /* AppDelegate.swift */; };
 		1FBF68892580ED33006EE8FC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBF68882580ED33006EE8FC /* SceneDelegate.swift */; };
 		1FBF688B2580ED33006EE8FC /* ChoiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FBF688A2580ED33006EE8FC /* ChoiceViewController.swift */; };
@@ -17,6 +20,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F6E661F2590F27E0077301C /* statsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = statsViewController.swift; sourceTree = "<group>"; };
+		1F6E66222590F4B20077301C /* Match.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Match.swift; sourceTree = "<group>"; };
+		1F6E66252590FB280077301C /* MatchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchCell.swift; sourceTree = "<group>"; };
 		1FBF68832580ED33006EE8FC /* RockPaperScisors(Code vs Segues).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RockPaperScisors(Code vs Segues).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FBF68862580ED33006EE8FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1FBF68882580ED33006EE8FC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,7 +68,10 @@
 				1FBF68882580ED33006EE8FC /* SceneDelegate.swift */,
 				1FBF688A2580ED33006EE8FC /* ChoiceViewController.swift */,
 				1FBF688C2580ED33006EE8FC /* Main.storyboard */,
+				1F6E661F2590F27E0077301C /* statsViewController.swift */,
 				1FBF689B2580F1E6006EE8FC /* ResultViewController.swift */,
+				1F6E66222590F4B20077301C /* Match.swift */,
+				1F6E66252590FB280077301C /* MatchCell.swift */,
 				1FBF688F2580ED34006EE8FC /* Assets.xcassets */,
 				1FBF68912580ED34006EE8FC /* LaunchScreen.storyboard */,
 				1FBF68942580ED34006EE8FC /* Info.plist */,
@@ -142,8 +151,11 @@
 			files = (
 				1FBF688B2580ED33006EE8FC /* ChoiceViewController.swift in Sources */,
 				1FBF68872580ED33006EE8FC /* AppDelegate.swift in Sources */,
+				1F6E66262590FB280077301C /* MatchCell.swift in Sources */,
 				1FBF68892580ED33006EE8FC /* SceneDelegate.swift in Sources */,
 				1FBF689C2580F1E6006EE8FC /* ResultViewController.swift in Sources */,
+				1F6E66202590F27E0077301C /* statsViewController.swift in Sources */,
+				1F6E66232590F4B20077301C /* Match.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

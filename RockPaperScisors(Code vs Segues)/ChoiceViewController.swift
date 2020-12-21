@@ -23,16 +23,24 @@ class ChoiceViewController: UIViewController {
         performSegue(withIdentifier: "paperSegue", sender: paperButton)
     }
     
+    @IBAction func statsButtonDidTapped() {
+        performSegue(withIdentifier: "ShowStatsSegue", sender: paperButton)
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "paperSegue" {
             let destinationController = segue.destination as? ResultViewController
             destinationController?.choice = .paper
         }
-    
+        
 //MARK: Scissors - Storyboard Segue triggered in IB/Storyboard
         if segue.identifier == "scissorsSegue" {
             let destinationController = segue.destination as? ResultViewController
             destinationController?.choice = .scissors
+        }
+        
+        if segue.identifier == "ShowStatsSegue" {
+            print("Stats")
         }
         
     }

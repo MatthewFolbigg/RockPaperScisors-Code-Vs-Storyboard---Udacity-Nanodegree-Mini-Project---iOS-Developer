@@ -17,10 +17,7 @@ class ResultViewController: UIViewController {
     @IBOutlet var choiceImage: UIImageView!
     
     
-    //MARK: Variables & Enums
-    enum moves { case rock, paper, scissors }
-    enum result { case win, lose, draw }
-    
+    //MARK: Variables & Enums    
     var choice: moves?
     var aiChoice: moves?
     var gameResult: result?
@@ -40,6 +37,8 @@ class ResultViewController: UIViewController {
         super.viewWillAppear(animated)
         getAiChoice()
         self.gameResult = getResult()
+        let match = Match(playerChoice: choice!, aiChoice: aiChoice!, result: gameResult!)
+        MatchLog.mainLog.addMatch(match: match)
         setUI()
         
     }
@@ -56,6 +55,7 @@ class ResultViewController: UIViewController {
             default: print("Error generating AI Choice")
         }
     }
+
     
     func getResult() -> result? {
         var result: result?
